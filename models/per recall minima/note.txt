@@ -1,0 +1,4 @@
+    weights = torch.tensor([1.0, 1.5]).to(device)
+    criterion = nn.CrossEntropyLoss(weight=weights)
+
+Sacrificando la precision per trovare più frodi possibili

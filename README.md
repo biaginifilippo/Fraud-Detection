@@ -5,9 +5,9 @@ Il presente repository contiene lo sviluppo e l'analisi di un sistema di Fraud D
 
 ## Architettura del Modello
 Il modello è implementato in PyTorch e presenta la seguente struttura:
-* **Input Layer**: Dimensionato in base alle feature preprocessate (63 o 65 input).
-* **Hidden Layers**: 7 livelli lineari con dimensionamento variabile (da 64 a 256 neuroni).
-* **Regolarizzazione**: Integrazione di livelli di Dropout (settabili tra 0.01 e 0.30) per il controllo dell'overfitting.
+* **Input Layer**: Dimensionato in base alle feature preprocessate (33, 63 o 65 input).
+* **Hidden Layers**: 7 livelli lineari con dimensionamento variabile (da 64 a 1024 neuroni).
+* **Regolarizzazione**: Integrazione di livelli di Dropout (settabili tra 0.01 e 0.75) per il controllo dell'overfitting.
 * **Funzioni di Attivazione**: ReLU per i livelli intermedi e CrossEntropyLoss per la classificazione binaria in uscita.
 * **Ottimizzatore**: Adam Optimizer con learning rate scheduling manuale.
 
