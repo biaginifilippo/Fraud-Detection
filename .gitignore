@@ -1,0 +1,17 @@
+# Dati (Fondamentale escluderli)
+data/
+*.csv
+*.xlsx
+
+# Ambiente virtuale
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pesi dei modelli (opzionale, se sono pesanti meglio non caricarli tutti)
+*.pth
+*.h5
